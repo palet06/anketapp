@@ -41,6 +41,12 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+ 
+}
+
+@theme  {
+  --color-anket-primary-bg:#0079CE;
+  --color-shadcn-gray-bg:#fafafa;
 }
 
 :root {
@@ -118,5 +124,17 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  btn-reset {
+    @apply bg-gray-500 p-0 border-0 cursor-pointer inline-flex items-center justify-center text-inherit;
+  }
+}
+
+@layer utilities {
+  .anket-primary-button {
+    @apply w-full h-12 mt-5 text-sm font-medium text-white hover:opacity-90 rounded-lg shadow-none cursor-pointer;
   }
 }

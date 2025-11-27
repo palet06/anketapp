@@ -1,13 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import {
-  Card,
-  CardContent,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -69,8 +63,8 @@ export default function Home() {
           <div className="flex items-center">
             <div className="w-8 h-8 bg-[#FCE7EA] rounded-lg flex items-center justify-center mr-3">
               <div
-                className="w-4 h-4 rounded-sm"
-                style={{ backgroundColor: "#0079CE" }}
+                className="w-4 h-4 rounded-sm bg-anket-primary-bg"
+                //style={{ backgroundColor: "#0079CE" }}
               ></div>
             </div>
             <h1 className="text-xl font-semibold text-[#FCE7EA]">AnketApp</h1>
@@ -150,7 +144,7 @@ export default function Home() {
                 </div>
               </div>
               <Button
-                className="w-full h-12 mt-5 text-sm font-medium text-white hover:opacity-90 rounded-lg shadow-none cursor-pointer"
+                className="anket-primary-button"
                 style={{ backgroundColor: "#0079CE" }}
                 type="submit"
               >
